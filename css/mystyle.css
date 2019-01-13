@@ -1,6 +1,24 @@
-
-
-
+.markathumbnail{
+	padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    display: inline-block;
+    max-width: 100%;
+    height: 300px;;
+	width: 400px;
+}
+.marka-profit:hover{
+	border: 1px solid #fecb00;
+	box-shadow: 5px 5px rgba(128, 128, 128, 0.37);
+}
+#logolar{
+	height: 200px;
+}
 .allcontain{
 	max-width: 1366px;
 	margin-left: auto;
@@ -769,7 +787,7 @@ font-weight: bold;
 } 
 }
 
-/* -----------------------Featured Cars--------------------------------------------------------*/
+
 .img1colon{
 	max-width:46.3%;
 }
@@ -859,7 +877,7 @@ font-weight: bold;
 	top:0px;
 	margin-top: 30px;
 	height: 0px;
- 	max-width: 290px;
+ 	max-width: 320px;
 }
 #readmore>h1{
 	text-align: center;
