@@ -1,30 +1,16 @@
-/*!
- * Isotope PACKAGED v2.2.2
- *
- * Licensed GPLv3 for open source use
- * or Isotope Commercial License for commercial use
- *
- * http://isotope.metafizzy.co
- * Copyright 2015 Metafizzy
- */
 
-/**
- * Bridget makes jQuery widgets
- * v1.1.0
- * MIT license
- */
 
 ( function( window ) {
 
 
 
-// -------------------------- utils -------------------------- //
+
 
 var slice = Array.prototype.slice;
 
 function noop() {}
 
-// -------------------------- definition -------------------------- //
+
 
 function defineBridget( $ ) {
 
@@ -33,21 +19,14 @@ if ( !$ ) {
   return;
 }
 
-// -------------------------- addOptionMethod -------------------------- //
 
-/**
- * adds option method -> $().plugin('option', {...})
- * @param {Function} PluginClass - constructor class
- */
+
 function addOptionMethod( PluginClass ) {
-  // don't overwrite original option method
   if ( PluginClass.prototype.option ) {
     return;
   }
 
-  // option setter
   PluginClass.prototype.option = function( opts ) {
-    // bail out if not an object
     if ( !$.isPlainObject( opts ) ){
       return;
     }
@@ -55,26 +34,15 @@ function addOptionMethod( PluginClass ) {
   };
 }
 
-// -------------------------- plugin bridge -------------------------- //
-
-// helper function for logging errors
-// $.error breaks jQuery chaining
 var logError = typeof console === 'undefined' ? noop :
   function( message ) {
     console.error( message );
   };
 
-/**
- * jQuery plugin bridge, access methods like $elem.plugin('method')
- * @param {String} namespace - plugin name
- * @param {Function} PluginClass - constructor class
- */
+
 function bridge( namespace, PluginClass ) {
-  // add to jQuery fn namespace
   $.fn[ namespace ] = function( options ) {
     if ( typeof options === 'string' ) {
-      // call plugin method when first argument is a string
-      // get arguments for method
       var args = slice.call( arguments, 1 );
 
       for ( var i=0, len = this.length; i < len; i++ ) {
@@ -90,25 +58,20 @@ function bridge( namespace, PluginClass ) {
           continue;
         }
 
-        // trigger method with arguments
         var returnValue = instance[ options ].apply( instance, args );
 
-        // break look and return first value if provided
         if ( returnValue !== undefined ) {
           return returnValue;
         }
       }
-      // return this if no return value
       return this;
     } else {
       return this.each( function() {
         var instance = $.data( this, namespace );
         if ( instance ) {
-          // apply options & init
           instance.option( options );
           instance._init();
         } else {
-          // initialize new instance
           instance = new PluginClass( this, options );
           $.data( this, namespace, instance );
         }
@@ -118,14 +81,6 @@ function bridge( namespace, PluginClass ) {
 
 }
 
-// -------------------------- bridget -------------------------- //
-
-/**
- * converts a Prototypical class into a proper jQuery plugin
- *   the class must have a ._init method
- * @param {String} namespace - plugin name, used in $().pluginName
- * @param {Function} PluginClass - constructor class
- */
 $.bridget = function( namespace, PluginClass ) {
   addOptionMethod( PluginClass );
   bridge( namespace, PluginClass );
@@ -135,29 +90,16 @@ return $.bridget;
 
 }
 
-// transport
 if ( typeof define === 'function' && define.amd ) {
-  // AMD
   define( 'jquery-bridget/jquery.bridget',[ 'jquery' ], defineBridget );
 } else if ( typeof exports === 'object' ) {
   defineBridget( require('jquery') );
 } else {
-  // get jquery from browser global
   defineBridget( window.jQuery );
 }
 
 })( window );
 
-/*!
- * eventie v1.0.6
- * event binding helper
- *   eventie.bind( elem, 'click', myFn )
- *   eventie.unbind( elem, 'click', myFn )
- * MIT license
- */
-
-/*jshint browser: true, undef: true, unused: true */
-/*global define: false, module: false */
 
 ( function( window ) {
 
@@ -219,34 +161,20 @@ var eventie = {
 // ----- module definition ----- //
 
 if ( typeof define === 'function' && define.amd ) {
-  // AMD
   define( 'eventie/eventie',eventie );
 } else if ( typeof exports === 'object' ) {
-  // CommonJS
   module.exports = eventie;
 } else {
-  // browser global
   window.eventie = eventie;
 }
 
 })( window );
 
-/*!
- * EventEmitter v4.2.11 - git.io/ee
- * Unlicense - http://unlicense.org/
- * Oliver Caldwell - http://oli.me.uk/
- * @preserve
- */
 
 ;(function () {
     'use strict';
 
-    /**
-     * Class for managing events.
-     * Can be extended to provide event functionality in other classes.
-     *
-     * @class EventEmitter Manages event registering and emitting.
-     */
+   
     function EventEmitter() {}
 
     // Shortcuts to improve speed and size
@@ -286,15 +214,7 @@ if ( typeof define === 'function' && define.amd ) {
         };
     }
 
-    /**
-     * Returns the listener array for the specified event.
-     * Will initialise the event object and listener arrays if required.
-     * Will return an object if you use a regex search. The object contains keys for each matched event. So /ba[rz]/ might return an object containing bar and baz. But only if you have either defined them with defineEvent or added some listeners to them.
-     * Each property in the object response is an array of listener functions.
-     *
-     * @param {String|RegExp} evt Name of the event to return the listeners from.
-     * @return {Function[]|Object} All listener functions for the event.
-     */
+    
     proto.getListeners = function getListeners(evt) {
         var events = this._getEvents();
         var response;
@@ -352,16 +272,6 @@ if ( typeof define === 'function' && define.amd ) {
         return response || listeners;
     };
 
-    /**
-     * Adds a listener function to the specified event.
-     * The listener will not be added if it is a duplicate.
-     * If the listener returns true then it will be removed after it is called.
-     * If you pass a regular expression as the event name then the listener will be added to all events that match it.
-     *
-     * @param {String|RegExp} evt Name of the event to attach the listener to.
-     * @param {Function} listener Method to be called when the event is emitted. If the function returns true then it will be removed after calling.
-     * @return {Object} Current instance of EventEmitter for chaining.
-     */
     proto.addListener = function addListener(evt, listener) {
         var listeners = this.getListenersAsObject(evt);
         var listenerIsWrapped = typeof listener === 'object';
@@ -379,19 +289,10 @@ if ( typeof define === 'function' && define.amd ) {
         return this;
     };
 
-    /**
-     * Alias of addListener
-     */
+    
     proto.on = alias('addListener');
 
-    /**
-     * Semi-alias of addListener. It will add a listener that will be
-     * automatically removed after its first execution.
-     *
-     * @param {String|RegExp} evt Name of the event to attach the listener to.
-     * @param {Function} listener Method to be called when the event is emitted. If the function returns true then it will be removed after calling.
-     * @return {Object} Current instance of EventEmitter for chaining.
-     */
+    
     proto.addOnceListener = function addOnceListener(evt, listener) {
         return this.addListener(evt, {
             listener: listener,
@@ -399,18 +300,10 @@ if ( typeof define === 'function' && define.amd ) {
         });
     };
 
-    /**
-     * Alias of addOnceListener.
-     */
+    
     proto.once = alias('addOnceListener');
 
-    /**
-     * Defines an event name. This is required if you want to use a regex to add a listener to multiple events at once. If you don't do this then how do you expect it to know what event to add to? Should it just add to every possible match for a regex? No. That is scary and bad.
-     * You need to tell it what event names should be matched by a regex.
-     *
-     * @param {String} evt Name of the event to create.
-     * @return {Object} Current instance of EventEmitter for chaining.
-     */
+    
     proto.defineEvent = function defineEvent(evt) {
         this.getListeners(evt);
         return this;
