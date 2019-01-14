@@ -1,4 +1,5 @@
 $.getJSON("markalar.json", function(sonuc){
+    console.log(sonuc)
     $.each(sonuc, function(index, value){
         var row="";
         row +='<option value="'+value.marka+'">'+value.marka+'</option>';
@@ -18,4 +19,5 @@ $("#marka").on("change", function(){
             }
         });
     });
+    
 });
