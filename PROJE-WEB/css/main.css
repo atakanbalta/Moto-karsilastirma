@@ -1,0 +1,150 @@
+
+ 
+ 
+ html{
+     color:grey;
+ }
+
+.bg-oylama-green {
+   background-color: #7ACD00;
+}
+
+.bg-oylama-red {
+   background-color: #B80707;
+}
+
+.karsilastirma-kutusu:hover {
+   background-color: #E8E8E8 !important;
+}
+
+.karsilastirma-link:hover h4 {
+   text-decoration: underline;
+}
+
+@media screen and (max-width: 384px) {
+   .karsilastirma-kutusu .sag-sutun img {
+       position: absolute;
+       left: 0;
+       right: 0;
+       margin: auto;
+       top: 60px;
+   }
+   .karsilastirma-kutusu .sag-sutun p {
+       position: absolute;
+       left: 0;
+       right: 0;
+       margin: auto;
+       top: -60px;
+   }
+}
+
+
+#karsilastirma-kapsul .model-thumb {
+   position:relative;
+   width:100%;
+   height:100px;
+}
+
+#karsilastirma-kapsul .model-thumb img {
+   width:100%;
+   height:auto;
+   position:absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   margin:auto;
+}
+
+
+
+
+
+@media(max-width:767px){
+   
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+   #karsilastirma-kapsul #tanitim-sol{
+       margin-left:-5px;
+   }
+
+   #karsilastirma-kapsul #tanitim-sag{
+       margin-left:-17px;
+   }
+}
+
+@media(min-width:992px) and (max-width: 1199px){
+       
+   }
+
+/* Large Screen */
+@media(min-width:1200px){
+   
+}
+h1 {font-size: 30px;}
+h2 {font-size: 22px;}
+h3 {font-size: 18px;}
+h4 {font-size: 16px;}
+
+p {
+   font-size: 13px;
+}
+
+.dar-container {
+   max-width: 970px;
+}
+/*-------- foto yÃ¼klerken modal'Ä± kapatmamasÄ± iÃ§in eklendi. cok Ã¶nemli*/
+
+.modal-backdrop {
+   z-index: 0 !important;
+}
+/*Global*/
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+   cursor: initial;
+}
+.fa-large {
+   font-size: 50px !important;
+   vertical-align: middle;
+}
+
+.tanitim {
+   text-align:center !important;
+}
+
+.tanitim  iframe {
+   /*display:block !important;*/
+   margin:auto !important;
+}
+
+/* google maps */
+
+#map-canvas {
+   width: 100%;
+   height: 420px;
+   color: black;
+}
+#map-canvas img {
+   max-width: none;
+   z-index: 1;
+}
+.kutu-cercevesi {
+   -moz-box-shadow: 0 0 5px #cacaca;
+   -webkit-box-shadow: 0 0 5px #CACACA;
+   box-shadow: 0 0 5px #CACACA;
+   background: white;
+}
+
+.kutu-cercevesi2 {
+   background: rgba(255, 255, 255, 0) !important;
+}
+
+.marks{
+   width:400px;
+   margin-left: 13%;
+   margin-top: 3%;
+   border: 2px solid rgb(224, 150, 11);
+   height: 50px;
+   font-size: 22px;
+}
