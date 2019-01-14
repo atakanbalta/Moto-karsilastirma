@@ -140,3 +140,11 @@ p {
    background: rgba(255, 255, 255, 0) !important;
 }
 
+.marks{
+   width:400px;
+   margin-left: 13%;
+   margin-top: 3%;
+   border: 2px solid rgb(224, 150, 11);
+   height: 50px;
+   font-size: 22px;
+}
