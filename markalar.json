@@ -1,4 +1,128 @@
 [
-    
+    {
+      "marka": "BMW",
+      "modeller": [
+        "BMW 1000RR",
+        "R 1200 Rs",
+        "S1000rr",
+        "K 1600B",
+        "K 1600Gtl",
+        "K 1600 gt",
+        "R 1200 rt",
+        "R 1200r",
+        "R 1200 Gs",
+        "F 750 GS",
+        "G 450 X",
+        "S 1000 XR"
+      ]
+    },
+    {
+      "marka": "SUZUKI",
+      "modeller": [
+        "HAYABUSA",
+        "RAIDER",
+        "GSX 1000R",
+        "Gsx r1000 abs",
+        "V-strom 1000",
+        "V-strom  650",
+        "Burgman 400z",
+        "Burgman650z",
+        "V-strom 250"
+      ]
+    },
+    {
+        "marka": "DUCATI",
+        "modeller": [
+          "Hypermotard 950",
+          "Panigale v4r",
+          "Panigale v4 specials ",
+          "959 panigale corse",
+          "1299 panigale",
+          "Bonneville bobber",
+          "Street triple rs",
+          "Sixty 2",
+          "Diavel Titanium",
+          "Diavel Carbon ",
+          "848 Evo",
+          "Panigale 1199 S",
+          "Multistrada 1200S",
+          "Monster 1100",
+          "Monster 796"
+        ]
+      },
+      {
+        "marka": "YAMAHA",
+        "modeller": [
+          "Niken GT",
+          "YZF R1",
+          "TENERE 700",
+          "FZ6 Fazer",
+          "MT-03",
+          "MT-07 ABS",
+          "MT-07",
+          "MT-10",
+          "MT-125",
+          "Nmax 155",
+          "PW 80 ",
+          "RX 1",
+          "RX 135",
+          "TDM 850",
+          "Majesty 400"
+        ]
+      },
+      {
+        "marka": "KAWASAKI",
+        "modeller": [
+          "H2R",
+          "Z 400",
+          "Çukurova",
+          "Feke",
+          "İmamoğlu",
+          "Karaisalı",
+          "Karataş",
+          "Kozan",
+          "Pozantı",
+          "Saimbeyli",
+          "Sarıçam",
+          "Seyhan",
+          "Tufanbeyli",
+          "Yumurtalık",
+          "Yüreğir"
+        ]
+      },
+      {
+        "marka": "HARLEY DAVIDSON",
+        "modeller": [
+          "IRON 883",
+          "FXDR114",
+          "Street 750",
+          "Streed rod",
+          "Superlow",
+          "İron1200tm",
+          "Forty-eight",
+          "Forty-eight special",
+          "1200 custom",
+          "Roadstertm"
+        ]
+      },
+      {
+        "marka": "HONDA",
+        "modeller": [
+          "CB 125 ACE",
+          "CB 125E",
+          "CB 250 R ",
+          "CBR1000RR sp",
+          "Cbr1000rr fireblade",
+          "Cb500F",
+          "Cb650F",
+          "CB 900 Hornet ",
+          "CBF 150 ",
+          "CBX 250 Twister",
+          "CBR 929 RR",
+          "CBR 1000 F ",
+          "CG 125",
+          "CBF 250"
 
-]
+        ]
+      }
+  ]
