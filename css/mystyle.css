@@ -16,6 +16,30 @@
 	border: 1px solid #fecb00;
 	box-shadow: 5px 5px rgba(128, 128, 128, 0.37);
 }
+.markbtn{
+	height: auto;
+	background: #020243;
+    border: 1px solid #020243;
+    font-family: "OpenSans Regular";
+    font-size: 12px;
+    color: #fff;
+    width:130px;
+   
+	
+}
+.markbtntiny{
+	height: auto;
+	background: #020243;
+    border: 1px solid #020243;
+    font-family: "OpenSans Regular";
+    font-size: 19px;
+    color: #fff;
+    letter-spacing: 5px;
+	width:150px;
+	height:100px;
+   
+	
+}
 #logolar{
 	height: 200px;
 }
