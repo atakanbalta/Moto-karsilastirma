@@ -10,7 +10,7 @@
 
 	<div class="grid">
 
-		<form action="https://httpbin.org/post" method="POST" class="form login">
+		<form  method="POST" class="form login">
 
 			<div class="form__field">
 				<label for="login__username"><svg class="icon">
@@ -27,15 +27,14 @@
 			</div>
 
 			<div class="form__field">
-				<input type="submit" value="GİRİŞ YAP" style="background-color: gold;">
+				<input type="submit" value="GİRİŞ YAP" style="background-color: gold;" id="result">
 			</div>
 
 		</form>
 
-		<p class="text--center">Şifremi unuttum? <a href="#">Kayıt ol</a> <svg class="icon">
-				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#arrow-right"></use>
-			</svg></p>
-
+		<p class="text--center">Şifremi unuttum? <a href="#">Kayıt ol</a>
+				</p>
+			
 	</div>
 
 	<svg xmlns="http://www.w3.org/2000/svg" class="icons">
@@ -51,5 +50,51 @@
 	</svg>
 
 </body>
+<script>
+    function kontrol() {
+    var login__password, login__username, text ; 
+    
+    // Kullanıcı adının uzunluğunu username değişkenine aktar
+    // Şifrenin uzunluğunu pass değişkenine aktar
+    username= document.getElementById("login__username").value.length;
+    pass= document.getElementById("login__username").value.length;
+    
+   
+    // Kullanıcı adı veya şifre girilmemişse
+    if (login__username == 0 || login__username == 0) {    
+    text= "Kullanici adı veya sifre bos birakilamaz";
+    }
+    
+    // Şifre 6 karakterden kısaysa
+    else if (login__username < 6) {
+    text= "Sifre 6 karakterden kisa olamaz";
+    }
+    
+    // Kullanıcı adı 3'den küçük 20'den fazlaysa 
+    else if (login__username < 3 || login__username > 20) {    
+    text= "Kullanici adi 3-20 karakter arasında olmalıdır"; 
+    }
+        
+    // İkisi de uygunsa
+    else {    
+  
+    text= "Giriş Başarılı" ;
+    console.log("Anasayfaya sayfasına yönlendiriliyorsunuz");
+    window.location.href = "index.html"
+  
+  
+  
+  
+    }
+    
+    
+    document.getElementById("result").innerHTML = text;
+  }
+  
+
+
+    
+  
+</script>
 
 </html>
