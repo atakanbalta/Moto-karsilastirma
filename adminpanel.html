@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADMIN Panel</title>
+
+    <link rel="stylesheet" type="text/css" href="source/bootstrap-3.3.6-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="source/font-awesome-4.5.0/css/font-awesome.css">
+    <!--CUSTOM BASIC STYLES-->
+    <link href="css/admin.css" rel="stylesheet" />
+    <!--CUSTOM MAIN STYLES-->
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">MOTORCULAR</a>
+            </div>
+
+            <div class="header-right">
+
+                <a class="btn btn-info" title="Yeni mesajlar"><b>2 </b><i class="fa fa-envelope-o fa-2x"></i></a>
+                <a class="btn btn-primary"><b>2 </b><i class="fa fa-bars fa-2x"></i></a>
+                <a href="#" class="btn btn-danger" title="ÇIKIŞ"><i class="fa fa-exclamation-circle fa-2x"></i></a>
+
+            </div>
+        </nav>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <div class="user-img-div">
+                            <img src="img/pp2.jpeg" class="img-thumbnail" />
+                            <img src="img/pp.jpg" class="img-thumbnail" />
+                            <div class="inner-text">
+                                Atakan & Oğuzhan
+                                <br />
+                                <small>Son giriş : Dün </small>
+                            </div>
+                        </div>
+
+                    </li>
+
+
+                    <li>
+                        <a class="active-menu"><i class="fa fa-dashboard "></i>
+                            Gösterge Paneli</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-desktop "></i>YÖNETİM PANELİ <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a><i class="fa fa-toggle-on"></i>Paneller</a>
+                            </li>
+                            <li>
+                                <a><i class="fa fa-bell "></i>Bildirimler</a>
+                            </li>
+                            
+
+
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-yelp "></i>Sayfalar <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href=""><i class="fa fa-coffee"></i>Markalar</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-flash "></i>Yeni motosiklet modelleri</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-key "></i>İçerikler</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-send "></i>Karşılaştırma</a>
+                            </li>
+
+                            <li>
+                                <a><i class="fa fa-recycle "></i>Mesajlar</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bicycle "></i>Formlar <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+
+
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a><i class="fa fa-anchor "></i>Galeri</a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-sign-in "></i>Giriş sayfası</a>
+                    </li>
+
+                </ul>
+                </li>
+
+
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">GÖSTERGE PANELİ</h1>
+                        <h1 class="page-subhead-line">
+                        </h1>
+
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="main-box mb-red">
+                            <a href="#">
+                                <i class="fa fa-bolt fa-5x"></i>
+                                <h5>HATALAR</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-box mb-dull">
+                            <a href="#">
+                                <i class="fa fa-plug fa-5x"></i>
+                                <h5>Kontrol Edilecekler</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-box mb-pink">
+                            <a href="#">
+                                <i class="fa fa-dollar fa-5x"></i>
+                                <h5>REKLAM GELİRLERİ</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /. ROW  -->
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div id="reviews" class="carousel slide" data-ride="carousel">
+
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+
+                                            <div class="col-md-10 col-md-offset-1">
+
+                                                <h4><i class="fa fa-quote-left"></i>En iyi hizmet için varız. <i class="fa fa-quote-right"></i></h4>
+                                                <div class="user-img pull-right">
+                                                    <img src="img/pp2.jpeg" alt="" class="img-u image-responsive" />
+                                                </div>
+                                                <h5 class="pull-right"><strong class="c-black">Atakan Balta</strong></h5>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="col-md-10 col-md-offset-1">
+
+                                                <h4><i class="fa fa-quote-left"></i>Merhaba <i class="fa fa-quote-right"></i></h4>
+                                                <div class="user-img pull-right">
+                                                    <img src="img/pp.jpg" alt="" class="img-u image-responsive" />
+                                                </div>
+                                                <h5 class="pull-right"><strong class="c-black">Oğuzhan Çoban</strong></h5>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#reviews" data-slide-to="0" class="active"></li>
+                                        <li data-target="#reviews" data-slide-to="1"></li>
+                                        <li data-target="#reviews" data-slide-to="2"></li>
+                                    </ol>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- /. ROW  -->
+                        <hr />
+
+                        <div class="panel panel-default">
+
+                            <div id="carousel-example" class="carousel slide" data-ride="carousel" style="border: 5px solid #000;">
+
+                                <div class="carousel-inner">
+                                    <div class="item active">
+
+                                        <img src="img/raider.jpg" alt="" style="width: 800px;"/>
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/pulsar.jpg" alt="" style="width: 800px; height: 492px;" />
+
+                                    </div>
+                                </div>
+
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example" data-slide-to="2"></li>
+                                </ol>
+
+                                <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-8">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">
+                                <h4 class="list-group-item-heading">ADMINLAR</h4>
+                                <p class="list-group-item-text" style="line-height: 30px;">
+                                    ATAKAN ŞAHİN BALTA
+                                    OĞUZHAN ÇOBAN
+
+                                </p>
+                            </a>
+                        </div>
+                        <br />
+
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-info" >
+                            <div class="
+                            panel-heading" >
+                                <i class="
+                            fa fa-bell fa-fw"></i>BİLDİRİM PANELİ
+                        </div>
+
+                        <div class="panel-body" >
+                                <div class="
+                            list-group">
+
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-twitter fa-fw"></i>3 YENİ TAKİPÇİ
+                                <span class="pull-right text-muted small"><em>12 dakika önce</em>
+                                </span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-envelope fa-fw"></i>Mesaj gönderildi
+                                <span class="pull-right text-muted small"><em>27 dakika önce</em>
+                                </span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-tasks fa-fw"></i>New görev
+                                <span class="pull-right text-muted small"><em>43 dakika önce</em>
+                                </span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-upload fa-fw"></i>Düzenlemeler
+                                <span class="pull-right text-muted small"><em>11:32</em>
+                                </span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-bolt fa-fw"></i>HATA!!!!
+                                <span class="pull-right text-muted small"><em>11:13</em>
+                                </span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-warning fa-fw"></i>YANIT VERMIYOR
+                                <span class="pull-right text-muted small"><em>10:57 </em>
+                                </span>
+                            </a>
+
+                        </div>
+                        <!-- /.list-group -->
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--/.Row-->
+        <hr />
+
+        <script src="source/js/jquery-1.10.2.js"></script>
+        <!-- BOOTSTRAP SCRIPTS -->
+        <script src="source/js/bootstrap.js"></script>
+        <!-- METISMENU SCRIPTS -->
+        <script src="source/js/jquery.metisMenu.js"></script>
+        <!-- CUSTOM SCRIPTS -->
+        <script src="js/admin.js"></script>
+       
+        <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.js"></script>
+        <script type="text/javascript" src="source/js/isotope.js"></script>
+        
+        <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/jquery.1.11.js"></script>
+        <script type="text/javascript" src="source/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+
+
+
+</body>
+
+</html>
