@@ -72,3 +72,16 @@ $(function () {
     $("#dropdownMenu3").html($(this).html() + ' <span class="downicon"></span>');
   });
 });
+
+
+
+function yenikisim() {
+	var metin = document.getElementById("textarea").value;
+	var yenielement = document.createElement("p");
+	var anakisim = document.getElementById("anakisim");
+	anakisim.appendChild(yenielement);
+	var icerik= document.createTextNode(metin);
+	yenielement.appendChild(icerik);
+
+
+}

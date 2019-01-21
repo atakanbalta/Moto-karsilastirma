@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script>
+        function yenikisim() {
+            var metin = document.getElementById("textarea").value;
+            var yenielement = document.createElement("p");
+            var anakisim = document.getElementById("anakisim");
+            anakisim.appendChild(yenielement);
+            var icerik = document.createTextNode(metin);
+            yenielement.appendChild(icerik);
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="anakisim">
+        <h3>BİRİNCİ YORUM</h3>
+        <p>
+            asdasdasda
+        </p>
+        <h3>İKİNCİ YORUM</h3>
+        <p>asdasdsadasdasdasdadad</p>
+    </div>
+    <textarea id="textarea" rows="10" cols="30"></textarea>
+
+
+    <button onclick="yenikisim()">Yeni Yorum Ekle</button>
+
+
+</body>
+
+</html>
