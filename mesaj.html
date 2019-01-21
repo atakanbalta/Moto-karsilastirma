@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADMIN Panel</title>
+
+    <link rel="stylesheet" type="text/css" href="source/bootstrap-3.3.6-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="source/font-awesome-4.5.0/css/font-awesome.css">
+    <!--CUSTOM BASIC STYLES-->
+    <link href="css/admin.css" rel="stylesheet" />
+    <!--CUSTOM MAIN STYLES-->
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+</head>
+
+<body>
+    
+        <div id="wrapper">
+            <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">MOTORCULAR</a>
+                </div>
+    
+                <div class="header-right">
+    
+                    <a class="btn btn-info" title="Yeni mesajlar"><b>2 </b><i class="fa fa-envelope-o fa-2x"></i></a>
+                    <a class="btn btn-primary"><b>2 </b><i class="fa fa-bars fa-2x"></i></a>
+                    <a href="#" class="btn btn-danger" title="ÇIKIŞ"><i class="fa fa-exclamation-circle fa-2x"></i></a>
+    
+                </div>
+            </nav>
+            <!-- /. NAV TOP  -->
+            <nav class="navbar-default navbar-side" role="navigation">
+                <div class="sidebar-collapse">
+                    <ul class="nav" id="main-menu">
+                        <li>
+                            <div class="user-img-div">
+                                <img src="img/pp2.jpeg" class="img-thumbnail" />
+                                <img src="img/pp.jpg" class="img-thumbnail" />
+                                <div class="inner-text">
+                                    Atakan & Oğuzhan
+                                    <br />
+                                    <small>Son giriş : Dün </small>
+                                </div>
+                            </div>
+    
+                        </li>
+    
+    
+                        <li>
+                            <a class="active-menu"><i class="fa fa-dashboard "></i>
+                                Gösterge Paneli</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-yelp "></i>Sayfalar <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href=""><i class="fa fa-coffee"></i>Markalar</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-flash "></i>Yeni motosiklet modelleri</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-key "></i>İçerikler</a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-send "></i>Karşılaştırma</a>
+                                </li>
+    
+                                <li>
+                                    <a><i class="fa fa-recycle "></i>Mesajlar</a>
+                                </li>
+    
+    
+                            </ul>
+                        </li>
+                        
+                        
+    
+                        <li>
+                            <a href="adminpanel.html"><i class="fa fa-sign-in "></i>Giriş sayfası</a>
+                        </li>
+    
+                    </ul>
+                    </li>
+    
+    
+                    </ul>
+    
+                </div>
+    
+            </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">Mesajlar ve Yapılacaklar</h1>
+                        <h1 class="page-subhead-line"> </h1>
+
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+                <div class="row">
+                   <div class="col-md-6">
+
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                               Mesaj kutusu 1
+                            </div>
+                            <div class="panel-body" style="padding: 0px;">
+                                <div class="chat-widget-main">
+
+
+                                    <div class="chat-widget-left">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </div>
+                                    <div class="chat-widget-name-left">
+                                        <h4>Amanna Seiar</h4>
+                                    </div>
+                                    <div class="chat-widget-right">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </div>
+                                    <div class="chat-widget-name-right">
+                                        <h4>Donim Cruseia </h4>
+                                    </div>
+                                    <div class="chat-widget-left">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </div>
+                                    <div class="chat-widget-name-left">
+                                        <h4>Amanna Seiar</h4>
+                                    </div>
+                                    <div class="chat-widget-right">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </div>
+                                    <div class="chat-widget-name-right">
+                                        <h4>Donim Cruseia </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Mesaj yaz..." />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-success" type="button">GÖNDER</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <i class="fa fa-bell fa-fw"></i>Mesaj kutusu 2
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="list-group">
+
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-twitter fa-fw"></i>3 yeni takipçi
+                                    <span class="pull-right text-muted small"><em>12 dakika önce</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-envelope fa-fw"></i>Mesaj gönderildi
+                                    <span class="pull-right text-muted small"><em>27 dakika önce</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-tasks fa-fw"></i>Yeni görev
+                                    <span class="pull-right text-muted small"><em>43 dakika önce</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-upload fa-fw"></i>Server Rebooted
+                                    <span class="pull-right text-muted small"><em>11:32 AM</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-bolt fa-fw"></i>Server Crashed!
+                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-warning fa-fw"></i>Server yanıt vermiyor
+                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
+                                    </span>
+                                    </a>
+
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-bolt fa-fw"></i>Server Crashed!
+                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-warning fa-fw"></i>Server yanıt vermiyor
+                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
+                                    </span>
+                                    </a>
+                                    
+                                   
+                                </div>
+                                <!-- /.list-group -->
+                                <a href="#" class="btn btn-info btn-block">Tüm bildirimleri göster</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+                 <div class="row">
+                   <div class="col-md-12">
+                       <div class="panel panel-primary">
+      <!-- Default panel contents -->
+      <div class="panel-heading"># YAPILACAKLAR LİSTESİ</div>
+
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+              <th>#</th>
+            <th>Görev adı</th>
+            <th>tarih</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="list-group-item-success">
+            <td>1</td>
+                <td><input type="checkbox" value="" /></td>
+            <td>Yeni markalar eklenecek</td>
+            <td>21 ocak </td>
+            <td><a href="#" class="btn btn-primary ">BİTTİ</a></td>
+          </tr>
+          <tr class="list-group-item-danger">
+            <td>2</td>
+                <td><input type="checkbox" value="" /></td>
+            <td>mesajlar yanıtlanacak</td>
+            <td> 25 ocak </td>
+            <td><a href="#" class="btn btn-success">BEKLİYOR</a></td>
+          </tr>
+          <tr class="list-group-item-info">
+            <td>3</td>
+                <td><input type="checkbox" value="" /></td>
+            <td>Dinamik yapı oluşturulacak</td>
+            <td>21 ocak </td>
+            <td><a href="#" class="btn btn-primary">YAPIM AŞAMASINDA</a></td>
+          
+          
+          
+        </tbody>
+      </table>
+    </div>
+                   </div>
+                     </div>
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <div id="footer-sec">
+        &copy; 2014 YourCompany | Design By : <a href="http://www.binarytheme.com/" target="_blank">BinaryTheme.com</a>
+    </div>
+    <!-- /. FOOTER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+
+
+</body>
+</html>
