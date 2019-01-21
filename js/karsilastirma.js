@@ -1,23 +1,19 @@
-$.getJSON("markalar.json", function(sonuc){
-    console.log(sonuc)
-    $.each(sonuc, function(index, value){
-        var row="";
-        row +='<option value="'+value.marka+'">'+value.marka+'</option>';
-        $("#marka").append(row);
-    })
-});
-$("#marka").on("change", function(){
-    var marka =$(this).val();
-    $("#modeller").attr("disabled", false).html("<option value=''>Seçin..</option>");
-    $.getJSON("markalar.json", function(sonuc){
-        $.each(sonuc, function(index, value){
-            var row="";
-            if(value.marka==marka)
-            {
-                row +='<option value="'+value.modeller+'">'+value.modeller+'</option>';
-                $("#modeller").append(row);
-            }
+function markaListele() {
+    var httpistegi = new XMLHttpRequest();
+    var adres = "https://raw.githubusercontent.com/atakanbalta/Moto-karsilastirma/master/markalar.json";
+  
+  
+    httpistegi.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var myArr = JSON.parse(this.responseText);
+        var marka1 = document.querySelector("#marka1");
+        myArr.forEach(function(params) {
+          marka1.innerHTML += '<option value="' + params.marka + '">'+ params.marka +'</option>';
         });
-    });
-    
-});
+      }
+    };
+    httpistegi.open("GET", adres, true);
+    httpistegi.send();
+  }
+
+  markaListele();
