@@ -125,6 +125,99 @@
           "CBF 250"
         ]
        
+      },
+      {
+        "marka": "APACHI",
+        "modeller": [
+          "4V CROSS",
+          "Cobra 125"
+          
+        ]
+       
+      },
+      {
+        "marka": "APRILIA",
+        "modeller": [
+          "Atlantic 250",
+          "Caponord 1000 ETV",
+          "Caponord 1000 ETV ABS ",
+          "Caponord 1200 ABS ",
+          "Travel Pack",
+          "Futura RST 1000 ",
+          "Futura RST 1200",
+          "Mana 850 ",
+          "Mana 850 GT",
+          "Mana 850 GT ABS",
+          "RS 125 ",
+          "RS 250 ",
+          "CG 125"
+          
+        ]
+       
+      },
+      {
+        "marka": "BENELLI",
+        "modeller": [
+          "BN 125",
+          "BN 251",
+          "BN 252 ",
+          "TNT 125",
+          "TNT 250",
+          "TNT 600",
+          "TNT 1000",
+          "TRK 502 ",
+          "Zafferano"
+          
+        ]
+       
+      },
+      {
+        "marka": "DORADO",
+        "modeller": [
+          "Akida Cub 100",
+          "Akida Scooter 150",
+          "Arcon 150 ",
+          "Corvus",
+          "Daphne",
+          "Poseidon ",
+          "Sandor 150 ",
+          "Sandor 250 "
+        ]
+       
+      },
+      {
+        "marka": "FALCON",
+        "modeller": [
+          "Attack 100",
+          "Comfort 150",
+          "Leopar 222 ",
+          "Leopar 2223",
+          "Leopar 242",
+          "Leopar 250",
+          "Magic 50",
+          "Magic 500 ",
+          "Shark 188  ",
+          "Sharp 150",
+          "Sharp 200"
+          
+        ]
+       
+      },
+      {
+        "marka": "HYOSUNG",
+        "modeller": [
+          "GD 250 N",
+          "GD 250 R",
+          "GD 250 S ",
+          "GD 250 GT",
+          "GV 250 ",
+          "GV 600",
+          "GV 1000",
+          "MS3 250 ",
+          "MS3 600 " 
+        ]
+       
       }
+
      ]
 
